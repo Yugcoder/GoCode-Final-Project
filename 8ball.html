@@ -16,7 +16,8 @@
 
         .img-2{
              height:500px;
-             width: 600px;
+             width: 500px;
+             margin-left: 200px;
         }
         
         .button {
@@ -42,16 +43,42 @@
 
 </head>
 <body>
+    
+   
+
+
   
    
 <div id="circle"></div>
-<img src="8balll appp.jpg" class="img-1" >
-<img src="ball.jpg" class="img-2" >
-<button class="button button4">Shake</button>
+<img src="8.png" class="img-1">
+<img src="8.png" id="8ball" class="img-2" >
+<button class="button button4" id = "shake">Shake</button>
 <form>
         <input type="text">
       
 </form>
+
+<script type="text/javascript">
+    document.querySelector("button").onclick = function() {
+        var Answer1;
+        Answer1 = Math.floor((Math.random() * 2));
+        console.log(Answer1);
+        function changeImage(a) {
+            document.getElementById("8ball").src= a;
+        }
+        if (Answer1 == 0)
+            changeImage("Yes.png")       
+
+         if (Answer1 == 1)
+            changeImage("NOtnow.png")
+
+         if (Answer1==2)
+            changeImage("No.png")
+
+      
+
+    };
+    </script>
     
 </body>
 </html>
