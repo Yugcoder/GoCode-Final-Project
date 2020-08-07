@@ -72,7 +72,7 @@
 alert("The Mystical 8ball")
     document.querySelector("button").onclick = function() {
         var Answer1;
-        Answer1 = Math.floor((Math.random() * 2));
+        Answer1 = Math.floor((Math.random() * 13));
         console.log(Answer1);
         function changeImage(a) {
             document.getElementById("8ball").src= a;
@@ -81,12 +81,40 @@ alert("The Mystical 8ball")
             changeImage("Yes.png")       
 
          if (Answer1 == 1)
-            changeImage("NOtnow.png")
-
-         if (Answer1== 2)
             changeImage("No.png")
 
+         if (Answer1== 2)
+            changeImage("Absolutly.png")
+        
+        if (Answer1 == 3)
+        changeImage("No-doubt.png")
+
+        if (Answer1 == 4)
+        changeImage("Ask-again.png")
       
+        if (Answer1 == 5)
+        changeImage("Count-on-it.png")
+
+        if (Answer1 == 6)
+        changeImage("It-will-pass.png")
+
+        if (Answer1 == 7)
+        changeImage("It-is-ok.png")
+
+        if (Answer1 == 8)
+        changeImage("Go-for-it.png")
+
+        if (Answer1 == 9)
+        changeImage("Wait-for-it.png")
+
+        if (Answer1 == 10)
+        changeImage("Very-likely.png")
+
+        if (Answer1 == 11)
+        changeImage("Cannot-tell-now")
+
+        if (Answer1 == 12)
+        changeImage("Not-now.png")
 
     };
     </script>
